@@ -4,7 +4,6 @@ const btn = document.querySelector('button')
 const toDo = document.querySelector(".todo");
 
 btn.addEventListener("click" , 
-    
     () => {     
         if(item1.value === '' || item2.value === '') {
                 
@@ -14,7 +13,6 @@ btn.addEventListener("click" ,
             item2.value = '';
         }
     }    
-    
 )
 
 let listItem = (item1 , item2) => {
@@ -29,7 +27,6 @@ let listItem = (item1 , item2) => {
                      </h5>
                     </div>`;
     
-
     saveDiv.addEventListener('click' , 
         () => {
             let deleteDivId = document.querySelector('.save-div');                
@@ -42,51 +39,8 @@ let listItem = (item1 , item2) => {
         }
     )
 
-     
-     
-    //  saveDiv.querySelector('i').addEventListener(
-    //     "click",
-    //     () => {
-    //         saveDiv.remove()
-    //     }
-    //  )
-     toDo.appendChild(saveDiv)
-}
-
-
-
-
-
-
-
-// self try to make todo
-
-// const input = document.querySelector('#item');
-// const todo = document.querySelector(".todo");
-
-// input.addEventListener('keyup' , 
-//     (event) => {
-//         if(event.key === 'Enter') {
-//             listItem(item.value);
-//             item.value = "";
-//         }
-        
-//     })
-
-// function listItem(item) {
-//     let list = document.createElement('li');
-//     list.innerHTML = ` ${item}`;
-//     todo.appendChild(list);
-    
-//     let btn = document.querySelector('.btn');
-//     btn.addEventListener('click' , () => {
-//         if(list.classList == 'done') {
-//             list.classList.remove('done');
-//         }else{   
-//             list.classList.add('done');
-//         }
-//     })
-// }
+     toDo.appendChild(saveDiv);
+};
 
 
 
